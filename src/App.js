@@ -5,9 +5,15 @@ import HeroSection from './components/HeroSection';
 import AboutMe from './components/AboutMeSection';
 import Projects from './components/ProjectsSection';
 import Contacts from './components/ContactsSection';
+import styled from 'styled-components';
+
+const body = styled.div`
+background-color: gray;
+`
 
 function App() {
 	return (
+		<body>
 		<div className='App'>
 			<BrowserRouter>
 				<NavBar />
@@ -19,8 +25,8 @@ function App() {
 					<Route path='contacts' element={<Contacts />} />
 				</Routes>
 			</BrowserRouter>
-			
-		</div>
+			</div>
+			</body>
 	);
 }
 

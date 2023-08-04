@@ -6,24 +6,38 @@ const ImageContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 600px;
-	background-color: gray;
+	padding-top: 500px;
+	background-color: ;
 `;
 
 const LogoImage = styled.img`
+	margin-top: 100px;
 	height: 80px;
 	width: 80px;
+`;
+
+const coding = styled.div`
+margin-top: 80px;
+text-align: justify;
+width: 60px;
+padding-top:450px;
 `;
 
 const AboutMe = () => {
 	return (
 		<div>
-			<h2>
-				I'm a family man, that enjoys music, sports and all things tech. Being a
-				web dev is intriguing to me because you are always learning to be at the
-				top of your game.
-			</h2>
-			<h3>I have coding knowledge in the following</h3>
+			<h1>About Me</h1>
+			<p>
+				I'm a family man, that enjoys music, sports and all things tech.
+				<br></br>
+				Being a web dev is intriguing to me because you are always learning to
+				be at the top of your game.<br></br> I enjoy working alone and in group
+				settings alike.<br></br> I am currently enrolled in the Concordia
+				University Web Dev Diploma program<br></br> and I'm hoping to leverage
+				the skills to transition into an entry level full-stack development
+				role.
+			</p>
+			<h2 className='coding'>My coding knowledge is in the following API's</h2>
 			<ImageContainer>
 				<LogoImage src='/logo.png' alt='HTML' />
 				<LogoImage src='/logo1.png' alt='CSS' />

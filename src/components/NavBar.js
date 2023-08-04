@@ -9,10 +9,11 @@ const NavBarContainer = styled.div`
 	align-items: flex-start;
 	position: fixed;
 	left: 0;
-	padding: 0px;
-	font-size: 20px;
-	font-family: ;
+	padding: 20px;
+	font-size: 30px;
+	font-family: copperplate;
 	font-weight: bolder;
+	text-decoration: none;
 `;
 
 const NavBar = () => {
@@ -28,10 +29,5 @@ const NavBar = () => {
 	);
 };
 
-// NavBar = styled.div`
-//  	margin-bottom: 10px;
-// 	text-decoration: none;
-// 	 	color: #333;
-// `;
-
+//
 export default NavBar;

@@ -5,7 +5,7 @@ const ContactContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 600px;
+	padding-top: 800px;
 `;
 
 const ContactImage = styled.img`
@@ -17,7 +17,7 @@ const ContactImage = styled.img`
 const ContactsSection = () => {
 	return (
 		<div>
-			<h2>Contact:</h2>
+			<h2>Contact Links</h2>
 			<ContactContainer>
 				<ContactImage src='/phone.png' alt='Phone' />
 				<ContactImage src='/linkedin.png' alt='Linkedin' />
