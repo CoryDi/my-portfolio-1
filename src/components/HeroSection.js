@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 import React from 'react';
-import App from '../App';
 
 const h1 = styled.div`
 	font-size: 600px;
+	font-family: copperplate;
 `;
-const h2 = styled.div``;
+
+const p = styled.div`
+	font-family: copperplate;
+	font-weight: bolder;
+`;
+
+const ProfileImage = styled.img`
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+`;
 
 const HeroSection = () => {
 	return (
@@ -15,9 +26,7 @@ const HeroSection = () => {
 				Hi, my name is Cory Dixon,<br></br> I am a full-stack web developer
 				based in<br></br> Kitchener-Waterloo, Ontario, Canada!
 			</p>
-			{/* <ImageContainer>
-		 <ProfileImage src='/profile.png' alt='Profile' />
-		 </ImageContainer> */}
+			<ProfileImage src='/profile.jpg' />
 		</div>
 	);
 };

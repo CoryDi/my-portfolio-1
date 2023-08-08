@@ -8,25 +8,25 @@ import Contacts from './components/ContactsSection';
 import styled from 'styled-components';
 
 const body = styled.div`
-background-color: gray;
-`
+	background-color: gray;
+`;
 
 function App() {
 	return (
 		<body>
-		<div className='App'>
-			<BrowserRouter>
-				<NavBar />
+			<div className='App'>
+				<BrowserRouter>
+					<NavBar />
 
-				<Routes>
-					<Route path='/' element={<HeroSection />} />
-					<Route path='/about' element={<AboutMe />} />
-					<Route path='/projects' element={<Projects />} />
-					<Route path='contacts' element={<Contacts />} />
-				</Routes>
-			</BrowserRouter>
+					<Routes>
+						<Route path='/' element={<HeroSection />} />
+						<Route path='/about' element={<AboutMe />} />
+						<Route path='/projects' element={<Projects />} />
+						<Route path='contacts' element={<Contacts />} />
+					</Routes>
+				</BrowserRouter>
 			</div>
-			</body>
+		</body>
 	);
 }
 

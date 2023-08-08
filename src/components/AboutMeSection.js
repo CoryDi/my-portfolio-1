@@ -17,17 +17,21 @@ const LogoImage = styled.img`
 `;
 
 const coding = styled.div`
-margin-top: 80px;
-text-align: justify;
-width: 60px;
-padding-top:450px;
+	margin-top: 80px;
+	text-align: justify;
+	width: 60px;
+	padding-top: 450px;
 `;
+
+// p.intro {
+
+// }
 
 const AboutMe = () => {
 	return (
 		<div>
-			<h1>About Me</h1>
-			<p>
+			<h1 divClass='info'>About Me</h1>
+			<p divClass='info'>
 				I'm a family man, that enjoys music, sports and all things tech.
 				<br></br>
 				Being a web dev is intriguing to me because you are always learning to
