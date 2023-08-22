@@ -20,7 +20,7 @@ const ProfileImage = styled.img`
 
 const HeroSection = () => {
 	return (
-		<div>
+		<div id='HeroSection'>
 			<h1>My Portfolio</h1>
 			<p>
 				Hi, my name is Cory Dixon,<br></br> I am a full-stack web developer

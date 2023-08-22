@@ -1,9 +1,33 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { createGlobalStyle } from 'styled-components';
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
-// NavBar.css //
-const NavBarContainer = styled.div`
+const NavBar = () => {
+	return (
+		<NavBarContainer>
+			<HashLink to={'/#HeroSection'} style={linkStyle}>
+				{' '}
+				Home{' '}
+			</HashLink>
+			<HashLink to={'/#AboutMeSection'} style={linkStyle}>
+				{' '}
+				About Me{' '}
+			</HashLink>
+			<HashLink to={'/#ProjectsSection'} style={linkStyle}>
+				{' '}
+				Projects{' '}
+			</HashLink>
+			<HashLink to={'/#ContactsSection'} style={linkStyle}>
+				{' '}
+				Contacts{' '}
+			</HashLink>
+		</NavBarContainer>
+	);
+};
+
+export default NavBar;
+
+const NavBarContainer = styled.ul`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -16,18 +40,8 @@ const NavBarContainer = styled.div`
 	text-decoration: none;
 `;
 
-const NavBar = () => {
-	return (
-		<div>
-			<NavBarContainer>
-				<Link to='/'>Home</Link>
-				<Link to='/about'>About Me</Link>
-				<Link to='/projects'>Projects</Link>
-				<Link to='/contacts'>Contact</Link>
-			</NavBarContainer>
-		</div>
-	);
+const linkStyle = {
+	margin: '5px',
+	textDecoration: 'none',
+	color: 'black',
 };
-
-//
-export default NavBar;
