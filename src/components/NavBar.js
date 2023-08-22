@@ -32,8 +32,6 @@ const NavBarContainer = styled.ul`
 	flex-direction: column;
 	align-items: flex-start;
 	position: fixed;
-	left: 0;
-	padding: 20px;
 	font-size: 30px;
 	font-family: copperplate;
 	font-weight: bolder;
