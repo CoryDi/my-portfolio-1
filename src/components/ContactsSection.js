@@ -57,6 +57,7 @@ const ContactForm = () => {
 const ContactsSection = () => {
 	return (
 		<div id='ContactsSection'>
+			<ContactForm />
 			<T>Contact Links</T>
 			<ContactContainer>
 				<a href='tel:1(519)729-8519'>
